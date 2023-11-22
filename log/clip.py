@@ -1,4 +1,4 @@
-from logic import check_winner
+from log.logic import check_winner
 
 def get_empty_board():
     return[
