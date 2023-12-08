@@ -22,7 +22,7 @@ write_text("hellow, world","hello.txt")
 play = [
     {
         "symbol": "X"
-        "move_count":1,
+        "move_count":1
         "move": "2"
         "time_spend":6
     },
