@@ -179,8 +179,15 @@ if __name__ == "__main__":
     # To play the game
     num_human_players = input("How many human players? (1/2): ")
     player1 = HumanPlayer("X")
-    player2 = BotPlayer("O")
+    player2 = None
+
     if num_human_players == "1":
         player2 = BotPlayer("O")
     elif num_human_players == "2":
         player2 = HumanPlayer("O")
+    else:
+        print("Invalid input. Please enter 1 or 2 for the number of human players.")
+        exit(1)
+
+    game = Game(player1, player2)
+    game.play()
